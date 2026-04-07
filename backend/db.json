@@ -107,11 +107,11 @@
       "id": 7,
       "name": "Stainless Steel Water Bottle (32oz)",
       "description": "Double-wall insulated bottle that keeps drinks cold 24hrs or hot 12hrs. Leak-proof lid.",
-      "category": "Outdoors",
+      "category": "Fitness",
       "tags": [
         "bottle",
         "hydration",
-        "outdoors",
+        "fitness",
         "eco-friendly"
       ],
       "price": 34.99,
@@ -141,7 +141,7 @@
       "id": 9,
       "name": "Hardcover Dot Grid Notebook",
       "description": "A5 hardcover notebook with 200 pages of 100gsm dot grid paper. Ribbon bookmark included.",
-      "category": "Stationery",
+      "category": "Accessories",
       "tags": [
         "notebook",
         "stationery",
@@ -170,6 +170,91 @@
       "stock": {
         "available": true,
         "quantity": 18
+      }
+    },
+    {
+      "id": 11,
+      "name": "Smart LED Light Bulb (4-Pack)",
+      "description": "WiFi-enabled LED bulbs compatible with voice assistants. Adjustable brightness and color temperature.",
+      "category": "Home",
+      "tags": [
+        "lighting",
+        "smart home",
+        "led",
+        "home"
+      ],
+      "price": 49.99,
+      "stock": {
+        "available": true,
+        "quantity": 64
+      }
+    },
+    {
+      "id": 12,
+      "name": "Nonstick Cookware Set (10-Piece)",
+      "description": "Durable nonstick pots and pans set with heat-resistant handles and even heat distribution.",
+      "category": "Kitchen",
+      "tags": [
+        "cookware",
+        "kitchen",
+        "nonstick",
+        "cooking"
+      ],
+      "price": 119.99,
+      "stock": {
+        "available": true,
+        "quantity": 22
+      }
+    },
+    {
+      "id": 13,
+      "name": "Men's Slim Fit Jeans",
+      "description": "Stretch denim jeans with a modern slim fit design. Comfortable for everyday wear.",
+      "category": "Clothing",
+      "tags": [
+        "jeans",
+        "clothing",
+        "mens",
+        "denim"
+      ],
+      "price": 59.99,
+      "stock": {
+        "available": true,
+        "quantity": 80
+      }
+    },
+    {
+      "id": 14,
+      "name": "Adjustable Dumbbell Set",
+      "description": "Space-saving adjustable dumbbells with multiple weight settings for home workouts.",
+      "category": "Fitness",
+      "tags": [
+        "weights",
+        "fitness",
+        "exercise",
+        "strength"
+      ],
+      "price": 149.99,
+      "stock": {
+        "available": true,
+        "quantity": 15
+      }
+    },
+    {
+      "id": 15,
+      "name": "Polarized Sunglasses",
+      "description": "UV-protective polarized sunglasses with lightweight frame and scratch-resistant lenses.",
+      "category": "Accessories",
+      "tags": [
+        "sunglasses",
+        "accessories",
+        "summer",
+        "fashion"
+      ],
+      "price": 29.99,
+      "stock": {
+        "available": true,
+        "quantity": 140
       }
     }
   ]
