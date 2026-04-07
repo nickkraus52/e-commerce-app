@@ -1,0 +1,176 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Wireless Noise-Cancelling Headphones",
+      "description": "Over-ear Bluetooth headphones with active noise cancellation and 30-hour battery life.",
+      "category": "Electronics",
+      "tags": [
+        "audio",
+        "bluetooth",
+        "wireless",
+        "electronics"
+      ],
+      "price": 129.99,
+      "stock": {
+        "available": true,
+        "quantity": 43
+      }
+    },
+    {
+      "id": 2,
+      "name": "Classic Leather Wallet",
+      "description": "Slim bifold wallet made from genuine full-grain leather. Fits up to 8 cards.",
+      "category": "Accessories",
+      "tags": [
+        "wallet",
+        "leather",
+        "accessories",
+        "mens"
+      ],
+      "price": 39.99,
+      "stock": {
+        "available": true,
+        "quantity": 120
+      }
+    },
+    {
+      "id": 3,
+      "name": "Ceramic Pour-Over Coffee Set",
+      "description": "Handcrafted ceramic dripper and carafe set for the perfect pour-over brew at home.",
+      "category": "Kitchen",
+      "tags": [
+        "coffee",
+        "kitchen",
+        "home",
+        "ceramic"
+      ],
+      "price": 54.99,
+      "stock": {
+        "available": true,
+        "quantity": 31
+      }
+    },
+    {
+      "id": 4,
+      "name": "Oversized Knit Sweater",
+      "description": "Cozy oversized sweater in a chunky knit weave, available in neutral tones.",
+      "category": "Clothing",
+      "tags": [
+        "sweater",
+        "knitwear",
+        "clothing",
+        "womens",
+        "winter"
+      ],
+      "price": 64.99,
+      "stock": {
+        "available": true,
+        "quantity": 58
+      }
+    },
+    {
+      "id": 5,
+      "name": "Mechanical Keyboard (TKL)",
+      "description": "Tenkeyless mechanical keyboard with tactile brown switches, RGB backlight, and USB-C connection.",
+      "category": "Electronics",
+      "tags": [
+        "keyboard",
+        "gaming",
+        "electronics",
+        "mechanical"
+      ],
+      "price": 89.99,
+      "stock": {
+        "available": true,
+        "quantity": 27
+      }
+    },
+    {
+      "id": 6,
+      "name": "Scented Soy Candle — Cedarwood & Vanilla",
+      "description": "Hand-poured 8oz soy wax candle with a warm cedarwood and vanilla fragrance. Burns up to 50 hours.",
+      "category": "Home",
+      "tags": [
+        "candle",
+        "home",
+        "scented",
+        "decor"
+      ],
+      "price": 22.99,
+      "stock": {
+        "available": true,
+        "quantity": 200
+      }
+    },
+    {
+      "id": 7,
+      "name": "Stainless Steel Water Bottle (32oz)",
+      "description": "Double-wall insulated bottle that keeps drinks cold 24hrs or hot 12hrs. Leak-proof lid.",
+      "category": "Outdoors",
+      "tags": [
+        "bottle",
+        "hydration",
+        "outdoors",
+        "eco-friendly"
+      ],
+      "price": 34.99,
+      "stock": {
+        "available": true,
+        "quantity": 76
+      }
+    },
+    {
+      "id": 8,
+      "name": "Yoga Mat (6mm Non-Slip)",
+      "description": "Eco-friendly TPE yoga mat with alignment lines, carry strap, and non-slip texture on both sides.",
+      "category": "Fitness",
+      "tags": [
+        "yoga",
+        "fitness",
+        "exercise",
+        "mat"
+      ],
+      "price": 44.99,
+      "stock": {
+        "available": false,
+        "quantity": 0
+      }
+    },
+    {
+      "id": 9,
+      "name": "Hardcover Dot Grid Notebook",
+      "description": "A5 hardcover notebook with 200 pages of 100gsm dot grid paper. Ribbon bookmark included.",
+      "category": "Stationery",
+      "tags": [
+        "notebook",
+        "stationery",
+        "journaling",
+        "bullet journal"
+      ],
+      "price": 18.99,
+      "stock": {
+        "available": true,
+        "quantity": 155
+      }
+    },
+    {
+      "id": 10,
+      "name": "Portable Bluetooth Speaker",
+      "description": "Compact waterproof speaker with 360° sound, 12-hour battery, and built-in mic for calls.",
+      "category": "Electronics",
+      "tags": [
+        "speaker",
+        "bluetooth",
+        "audio",
+        "outdoor",
+        "electronics"
+      ],
+      "price": 59.99,
+      "stock": {
+        "available": true,
+        "quantity": 18
+      }
+    }
+  ]
+}
