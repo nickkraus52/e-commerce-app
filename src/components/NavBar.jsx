@@ -1,18 +1,18 @@
 import "../index.css"
 
-function NavBar() {
+function NavBar({ setCategory }) {
 
-    const buttonClass = "text-[#52DEE5] border-2 rounded-sm border-[#92DCE5] bg-[#383D3B] py-1 hover:bg-[#7C7C7C] hover:border-[#52DEE5] mx-1"
+    const buttonClass = "flex-1 font-bold text-shadow-md text-xs text-[#52DEE5] border-2 rounded-lg border-[#92DCE5] bg-[#383D3B] py-1 hover:bg-[#7C7C7C] hover:border-[#383D3B] hover:text-[#383D3B] mx-0.5 cursor-pointer"
 
     return (
         <>
-            <div className="flex justify-center items-center bg-[#EEE5E9] py-1">
-                <button className={buttonClass}>Electronics</button>
-                <button className={buttonClass}>Clothing</button>
-                <button className={buttonClass}>Home</button>
-                <button className={buttonClass}>Kitchen</button>
-                <button className={buttonClass}>Fitness</button>
-                <button className={buttonClass}>Accessories</button>
+            <div className="flex drop-shadow-lg border-b-2 border-[#565b59] justify-center items-center bg-[#EEE5E9] py-0.5">
+                <button onClick={() => setCategory("Electronics")} className={buttonClass}>Electronics</button>
+                <button onClick={() => setCategory("Clothing")} className={buttonClass}>Clothing</button>
+                <button onClick={() => setCategory("Home")} className={buttonClass}>Home</button>
+                <button onClick={() => setCategory("Kitchen")} className={buttonClass}>Kitchen</button>
+                <button onClick={() => setCategory("Fitness")} className={buttonClass}>Fitness</button>
+                <button onClick={() => setCategory("Accessories")} className={buttonClass}>Accessories</button>
             </div>
         </>
     )
