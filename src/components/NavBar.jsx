@@ -12,7 +12,7 @@ function NavBar({ setCategory }) {
                 <button onClick={() => setCategory("Home")} className={buttonClass}>Home</button>
                 <button onClick={() => setCategory("Kitchen")} className={buttonClass}>Kitchen</button>
                 <button onClick={() => setCategory("Fitness")} className={buttonClass}>Fitness</button>
-                <button onClick={() => setCategory("Accessories")} className={buttonClass}>Accessories</button>
+                <button onClick={() => setCategory("Miscellaneous")} className={buttonClass}>Miscellaneous</button>
             </div>
         </>
     )
