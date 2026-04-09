@@ -6,7 +6,7 @@ function NavBar({ setCategory }) {
 
     return (
         <>
-            <div className="flex drop-shadow-lg border-b-2 border-[#565b59] justify-center items-center bg-[#EEE5E9] py-0.5">
+            <div className="flex w-full max-w-full min-w-0 flex-wrap justify-center items-center gap-1 px-1 drop-shadow-lg drop-shadow-[#52DEE5]/30 border-b-2 border-[#565b59] bg-[#EEE5E9] py-0.5">
                 <button onClick={() => setCategory("Electronics")} className={buttonClass}>Electronics</button>
                 <button onClick={() => setCategory("Clothing")} className={buttonClass}>Clothing</button>
                 <button onClick={() => setCategory("Home")} className={buttonClass}>Home</button>

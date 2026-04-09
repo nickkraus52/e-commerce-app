@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@plugin "tailwind-scrollbar";
+
 /* Tailwind v4 default hover uses @media (hover: hover); Chrome/Windows touch
    laptops often fail that query—plain :hover restores mouse hover + DevTools. */
 @custom-variant hover (&:hover);

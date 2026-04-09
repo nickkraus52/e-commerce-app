@@ -21,7 +21,7 @@
       "id": 2,
       "name": "Classic Leather Wallet",
       "description": "Slim bifold wallet made from genuine full-grain leather. Fits up to 8 cards.",
-      "category": "Accessories",
+      "category": "Miscellaneous",
       "tags": [
         "wallet",
         "leather",
@@ -141,7 +141,7 @@
       "id": 9,
       "name": "Hardcover Dot Grid Notebook",
       "description": "A5 hardcover notebook with 200 pages of 100gsm dot grid paper. Ribbon bookmark included.",
-      "category": "Accessories",
+      "category": "Miscellaneous",
       "tags": [
         "notebook",
         "stationery",
@@ -244,7 +244,7 @@
       "id": 15,
       "name": "Polarized Sunglasses",
       "description": "UV-protective polarized sunglasses with lightweight frame and scratch-resistant lenses.",
-      "category": "Accessories",
+      "category": "Miscellaneous",
       "tags": [
         "sunglasses",
         "accessories",
@@ -255,6 +255,210 @@
       "stock": {
         "available": true,
         "quantity": 140
+      }
+    },
+    {
+      "id": 16,
+      "name": "USB-C Fast Charging Cable (2-Pack)",
+      "description": "Durable braided USB-C cables supporting fast charging and data transfer.",
+      "category": "Electronics",
+      "tags": [
+        "charging",
+        "cable",
+        "electronics",
+        "usb-c"
+      ],
+      "price": 14.99,
+      "stock": {
+        "available": true,
+        "quantity": 150
+      }
+    },
+    {
+      "id": 17,
+      "name": "Wireless Mouse",
+      "description": "Ergonomic wireless mouse with adjustable DPI and long battery life.",
+      "category": "Electronics",
+      "tags": [
+        "mouse",
+        "electronics",
+        "wireless",
+        "computer"
+      ],
+      "price": 24.99,
+      "stock": {
+        "available": true,
+        "quantity": 85
+      }
+    },
+    {
+      "id": 18,
+      "name": "Women's Running Shorts",
+      "description": "Lightweight breathable running shorts with moisture-wicking fabric.",
+      "category": "Clothing",
+      "tags": [
+        "shorts",
+        "clothing",
+        "womens",
+        "running"
+      ],
+      "price": 29.99,
+      "stock": {
+        "available": true,
+        "quantity": 60
+      }
+    },
+    {
+      "id": 19,
+      "name": "Men's Zip-Up Hoodie",
+      "description": "Soft fleece zip-up hoodie with adjustable drawstring hood.",
+      "category": "Clothing",
+      "tags": [
+        "hoodie",
+        "clothing",
+        "mens",
+        "casual"
+      ],
+      "price": 49.99,
+      "stock": {
+        "available": true,
+        "quantity": 70
+      }
+    },
+    {
+      "id": 20,
+      "name": "Decorative Throw Pillow",
+      "description": "Soft decorative pillow with removable washable cover.",
+      "category": "Home",
+      "tags": [
+        "pillow",
+        "home",
+        "decor",
+        "comfort"
+      ],
+      "price": 19.99,
+      "stock": {
+        "available": true,
+        "quantity": 110
+      }
+    },
+    {
+      "id": 21,
+      "name": "Wall Art Canvas Print",
+      "description": "Modern abstract canvas print ready to hang.",
+      "category": "Home",
+      "tags": [
+        "art",
+        "home",
+        "decor",
+        "canvas"
+      ],
+      "price": 39.99,
+      "stock": {
+        "available": true,
+        "quantity": 45
+      }
+    },
+    {
+      "id": 22,
+      "name": "Stainless Steel Chef Knife",
+      "description": "Professional 8-inch chef knife with ergonomic handle.",
+      "category": "Kitchen",
+      "tags": [
+        "knife",
+        "kitchen",
+        "cooking",
+        "chef"
+      ],
+      "price": 34.99,
+      "stock": {
+        "available": true,
+        "quantity": 50
+      }
+    },
+    {
+      "id": 23,
+      "name": "Glass Meal Prep Containers (5-Pack)",
+      "description": "Durable glass containers with airtight lids for meal prep and storage.",
+      "category": "Kitchen",
+      "tags": [
+        "containers",
+        "kitchen",
+        "storage",
+        "meal prep"
+      ],
+      "price": 44.99,
+      "stock": {
+        "available": true,
+        "quantity": 65
+      }
+    },
+    {
+      "id": 24,
+      "name": "Resistance Bands Set",
+      "description": "Set of 5 resistance bands with varying levels for full-body workouts.",
+      "category": "Fitness",
+      "tags": [
+        "bands",
+        "fitness",
+        "exercise",
+        "strength"
+      ],
+      "price": 19.99,
+      "stock": {
+        "available": true,
+        "quantity": 90
+      }
+    },
+    {
+      "id": 25,
+      "name": "Foam Roller",
+      "description": "High-density foam roller for muscle recovery and stretching.",
+      "category": "Fitness",
+      "tags": [
+        "recovery",
+        "fitness",
+        "foam roller",
+        "exercise"
+      ],
+      "price": 24.99,
+      "stock": {
+        "available": true,
+        "quantity": 55
+      }
+    },
+    {
+      "id": 26,
+      "name": "Car Phone Mount",
+      "description": "Adjustable dashboard phone mount with strong suction base.",
+      "category": "Miscellaneous",
+      "tags": [
+        "car",
+        "phone",
+        "mount",
+        "accessory"
+      ],
+      "price": 15.99,
+      "stock": {
+        "available": true,
+        "quantity": 130
+      }
+    },
+    {
+      "id": 27,
+      "name": "Travel Backpack",
+      "description": "Water-resistant backpack with multiple compartments and laptop sleeve.",
+      "category": "Miscellaneous",
+      "tags": [
+        "backpack",
+        "travel",
+        "bag",
+        "utility"
+      ],
+      "price": 59.99,
+      "stock": {
+        "available": true,
+        "quantity": 40
       }
     }
   ]
