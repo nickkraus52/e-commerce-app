@@ -16,37 +16,43 @@ function App() {
   useEffect(() => {
     fetch(URL)
     .then(res => res.json())
-    .then(data => setItems(data))})
+    .then(data => {
+      setItems(data) 
+      setFilteredItems(data)
+    })}, [])
 
   useEffect(() => {
-    setFilteredItems(items)
+    let updated = items
+    
     if (category !== ""){
-      setFiltered(filteredItems.filter(item => item.category == category))
-    } /* if (search !== ""){
+      updated = updated.filter(item => item.category.toLowerCase() == category.toLowerCase())
+    } if (search !== "" && search !== undefined){
         if (search.split(" ").length > 1){
           const words = search.split(" ")
           words.forEach(word => setFilteredItems(filteredItems.filter(item => checkForKeyword(word, item))))
         } else{
-          setFilteredItems(filteredItems.filter(item => checkForKeyword(search)))
+          updated = updated.filter(item => checkForKeyword(search))
         }
-    } */
-  })
+    } 
 
-  /*function checkForKeyword(keyword, item){
+    setFilteredItems(updated)
+  }, [category, search])
+
+  function checkForKeyword(keyword, item){
     if (item.description.contains(keyword)){
       return true
     } if (item.name.contains(keyword)){
       return true
     }
-  } */
+  } 
 
   return (
     <div className="flex h-dvh flex-col overflow-hidden bg-[#7C7C7C]">
       <header className="z-10 w-full shrink-0 shadow-md shadow-black/20">
-        <SearchBar setSearch={setSearch} />
+        <SearchBar setSearch={setSearch} search={search}/>
         <NavBar setCategory={setCategory} />
       </header>
-      <main className="min-h-0 flex-1 overflow-y-auto scrollbar-thin scrollbar-thumb-[#52DEE5] scrollbar-track-[#383D3B] hover:scrollbar-thumb-[#92DCE5]">
+      <main className="min-h-0 flex-1 overflow-y-auto scrollbar-thin scrollbar-thumb-[#52DEE5] scrollbar-track-[#7C7C7C] hover:scrollbar-thumb-[#92DCE5]">
         <Filters category={category} search={search} setCategory={setCategory} setSearch={setSearch} />
         <ItemsListing items={filteredItems} setCart={setCart} cart={cart} />
       </main>
