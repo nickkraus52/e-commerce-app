@@ -1,7 +1,7 @@
 {
   "products": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Wireless Noise-Cancelling Headphones",
       "description": "Over-ear Bluetooth headphones with active noise cancellation and 30-hour battery life.",
       "category": "Electronics",
@@ -18,7 +18,7 @@
       }
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Classic Leather Wallet",
       "description": "Slim bifold wallet made from genuine full-grain leather. Fits up to 8 cards.",
       "category": "Miscellaneous",
@@ -35,7 +35,7 @@
       }
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Ceramic Pour-Over Coffee Set",
       "description": "Handcrafted ceramic dripper and carafe set for the perfect pour-over brew at home.",
       "category": "Kitchen",
@@ -52,7 +52,7 @@
       }
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Oversized Knit Sweater",
       "description": "Cozy oversized sweater in a chunky knit weave, available in neutral tones.",
       "category": "Clothing",
@@ -70,7 +70,7 @@
       }
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Mechanical Keyboard (TKL)",
       "description": "Tenkeyless mechanical keyboard with tactile brown switches, RGB backlight, and USB-C connection.",
       "category": "Electronics",
@@ -87,7 +87,7 @@
       }
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Scented Soy Candle — Cedarwood & Vanilla",
       "description": "Hand-poured 8oz soy wax candle with a warm cedarwood and vanilla fragrance. Burns up to 50 hours.",
       "category": "Home",
@@ -104,7 +104,7 @@
       }
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "Stainless Steel Water Bottle (32oz)",
       "description": "Double-wall insulated bottle that keeps drinks cold 24hrs or hot 12hrs. Leak-proof lid.",
       "category": "Fitness",
@@ -121,7 +121,7 @@
       }
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "Yoga Mat (6mm Non-Slip)",
       "description": "Eco-friendly TPE yoga mat with alignment lines, carry strap, and non-slip texture on both sides.",
       "category": "Fitness",
@@ -138,7 +138,7 @@
       }
     },
     {
-      "id": 9,
+      "id": "9",
       "name": "Hardcover Dot Grid Notebook",
       "description": "A5 hardcover notebook with 200 pages of 100gsm dot grid paper. Ribbon bookmark included.",
       "category": "Miscellaneous",
@@ -155,7 +155,7 @@
       }
     },
     {
-      "id": 10,
+      "id": "10",
       "name": "Portable Bluetooth Speaker",
       "description": "Compact waterproof speaker with 360° sound, 12-hour battery, and built-in mic for calls.",
       "category": "Electronics",
@@ -173,7 +173,7 @@
       }
     },
     {
-      "id": 11,
+      "id": "11",
       "name": "Smart LED Light Bulb (4-Pack)",
       "description": "WiFi-enabled LED bulbs compatible with voice assistants. Adjustable brightness and color temperature.",
       "category": "Home",
@@ -190,7 +190,7 @@
       }
     },
     {
-      "id": 12,
+      "id": "12",
       "name": "Nonstick Cookware Set (10-Piece)",
       "description": "Durable nonstick pots and pans set with heat-resistant handles and even heat distribution.",
       "category": "Kitchen",
@@ -207,7 +207,7 @@
       }
     },
     {
-      "id": 13,
+      "id": "13",
       "name": "Men's Slim Fit Jeans",
       "description": "Stretch denim jeans with a modern slim fit design. Comfortable for everyday wear.",
       "category": "Clothing",
@@ -224,7 +224,7 @@
       }
     },
     {
-      "id": 14,
+      "id": "14",
       "name": "Adjustable Dumbbell Set",
       "description": "Space-saving adjustable dumbbells with multiple weight settings for home workouts.",
       "category": "Fitness",
@@ -241,7 +241,7 @@
       }
     },
     {
-      "id": 15,
+      "id": "15",
       "name": "Polarized Sunglasses",
       "description": "UV-protective polarized sunglasses with lightweight frame and scratch-resistant lenses.",
       "category": "Miscellaneous",
@@ -258,7 +258,7 @@
       }
     },
     {
-      "id": 16,
+      "id": "16",
       "name": "USB-C Fast Charging Cable (2-Pack)",
       "description": "Durable braided USB-C cables supporting fast charging and data transfer.",
       "category": "Electronics",
@@ -275,7 +275,7 @@
       }
     },
     {
-      "id": 17,
+      "id": "17",
       "name": "Wireless Mouse",
       "description": "Ergonomic wireless mouse with adjustable DPI and long battery life.",
       "category": "Electronics",
@@ -292,7 +292,7 @@
       }
     },
     {
-      "id": 18,
+      "id": "18",
       "name": "Women's Running Shorts",
       "description": "Lightweight breathable running shorts with moisture-wicking fabric.",
       "category": "Clothing",
@@ -309,7 +309,7 @@
       }
     },
     {
-      "id": 19,
+      "id": "19",
       "name": "Men's Zip-Up Hoodie",
       "description": "Soft fleece zip-up hoodie with adjustable drawstring hood.",
       "category": "Clothing",
@@ -326,7 +326,7 @@
       }
     },
     {
-      "id": 20,
+      "id": "20",
       "name": "Decorative Throw Pillow",
       "description": "Soft decorative pillow with removable washable cover.",
       "category": "Home",
@@ -343,7 +343,7 @@
       }
     },
     {
-      "id": 21,
+      "id": "21",
       "name": "Wall Art Canvas Print",
       "description": "Modern abstract canvas print ready to hang.",
       "category": "Home",
@@ -360,7 +360,7 @@
       }
     },
     {
-      "id": 22,
+      "id": "22",
       "name": "Stainless Steel Chef Knife",
       "description": "Professional 8-inch chef knife with ergonomic handle.",
       "category": "Kitchen",
@@ -377,7 +377,7 @@
       }
     },
     {
-      "id": 23,
+      "id": "23",
       "name": "Glass Meal Prep Containers (5-Pack)",
       "description": "Durable glass containers with airtight lids for meal prep and storage.",
       "category": "Kitchen",
@@ -394,7 +394,7 @@
       }
     },
     {
-      "id": 24,
+      "id": "24",
       "name": "Resistance Bands Set",
       "description": "Set of 5 resistance bands with varying levels for full-body workouts.",
       "category": "Fitness",
@@ -411,7 +411,7 @@
       }
     },
     {
-      "id": 25,
+      "id": "25",
       "name": "Foam Roller",
       "description": "High-density foam roller for muscle recovery and stretching.",
       "category": "Fitness",
@@ -428,7 +428,7 @@
       }
     },
     {
-      "id": 26,
+      "id": "26",
       "name": "Car Phone Mount",
       "description": "Adjustable dashboard phone mount with strong suction base.",
       "category": "Miscellaneous",
@@ -445,7 +445,7 @@
       }
     },
     {
-      "id": 27,
+      "id": "27",
       "name": "Travel Backpack",
       "description": "Water-resistant backpack with multiple compartments and laptop sleeve.",
       "category": "Miscellaneous",
@@ -461,5 +461,23 @@
         "quantity": 40
       }
     }
-  ]
+  ],
+  "cart": [
+    {
+      "itemID": "5",
+      "count": 5,
+      "id": "8XHOxFuER2g"
+    },
+    {
+      "itemID": "14",
+      "count": 5,
+      "id": "wkB4SD0WDrc"
+    },
+    {
+      "itemID": "25",
+      "count": 8,
+      "id": "7BrA6-lqykc"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

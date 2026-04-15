@@ -1,20 +1,82 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
-function ItemCard({ item, setCart, cart }) {
+function ItemCard({ item }) {
     const [added, setAdded] = useState(0)
-
-    
+    const [cartID, setCartID] = useState("")
+    const URL = "http://localhost:5000/cart"
     const minusStyle = "cursor-pointer px-2 font-bold text-shadow-md text-xs text-[#EEE5E9] border border-[#92DCE5] bg-[#383D3B]" + ((added == 0) ? " hover:bg-[#e25050]" : "")
     const plusStyle = "cursor-pointer px-1.75 font-bold text-shadow-md text-xs text-[#EEE5E9] border border-[#92DCE5] bg-[#383D3B]" + ((added == item.stock.quantity) ? " hover:bg-[#e25050]" : "")
 
+    useEffect(() => {
+        console.log("word")
+        fetch(URL)
+        .then(res => res.json())
+        .then(data => data.forEach(i => {
+            console.log(i)
+            if (i.itemID === item.id){
+                setCartID(i.id)
+            }
+        }))
+    }, [])
+
+
+
+    useEffect(() => {
+        if (cartID !== ''){
+            fetch(URL + "/" + cartID)
+            .then(res => res.json())
+            .then(data => {
+                setAdded(data.count)
+            })
+        } 
+    }, [added, cartID])
+
+    
+    
     const handleCount = (op) => {
         if (op === "-"){
-            if (added !== 0){
+            if (added !== 0){ 
                 setAdded(added - 1)
+
+                if (added > 1){
+                    fetch(URL + "/" + cartID, {
+                        method: "PATCH",
+                        headers: {'content-type': 'application/json'},
+                        body: JSON.stringify({"count": added - 1})
+                        }
+                    ).then(res => res.json())
+                    .then(data => console.log("hello"))
+                } else {
+                    fetch(URL + "/" + cartID, {
+                        method: "DELETE"}
+                    )
+                    setCartID('')
+                }
             }
-        } else{
+        } else {
             if (item.stock.available && added < item.stock.quantity){
                 setAdded(added + 1)
+
+                if (added == 0){
+                    fetch(URL, {
+                        method: "POST",
+                        headers: {'Content-Type': 'application/json'},
+                        body: JSON.stringify({
+                            itemID: item.id,
+                            count: 1
+                        })
+                    })
+                    .then(res => res.json())
+                    .then(data => setCartID(data.id))
+                } else {
+                    fetch(URL + "/" + cartID, {
+                        method: "PATCH",
+                        headers: {'content-type': 'application/json'},
+                        body: JSON.stringify({"count": added + 1})
+                        }
+                    ).then(res => res.json())
+                }
+
             }
         }
     }

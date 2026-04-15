@@ -11,7 +11,6 @@ function App() {
   const [filteredItems, setFilteredItems] = useState([])
   const [category, setCategory] = useState("")
   const [search, setSearch] = useState("")
-  const [cart, setCart] = useState([])
 
   useEffect(() => {
     fetch(URL)
@@ -28,23 +27,36 @@ function App() {
       updated = updated.filter(item => item.category.toLowerCase() == category.toLowerCase())
     } if (search !== "" && search !== undefined){
         if (search.split(" ").length > 1){
-          const words = search.split(" ")
-          words.forEach(word => setFilteredItems(filteredItems.filter(item => checkForKeyword(word, item))))
+          let words = search.split(" ")
+          console.log("search")
+          words.forEach(word => setFilteredItems(updated.filter(i => checkForKeyword(word, i))))
         } else{
-          updated = updated.filter(item => checkForKeyword(search))
-        }
+          console.log("h")
+          updated = updated.filter(i => checkForKeyword(search, i))
+        } 
     } 
 
     setFilteredItems(updated)
-  }, [category, search])
+  }, [category, search]) 
 
-  function checkForKeyword(keyword, item){
-    if (item.description.contains(keyword)){
+  function checkForKeyword(keyword, i){
+    let description = i.description
+    let name = i.name
+    let tags = i.tags
+
+    if (description.toUpperCase().includes(keyword)){
       return true
-    } if (item.name.contains(keyword)){
+    } if (name.toUpperCase().includes(keyword)){
       return true
-    }
-  } 
+    } 
+    tags.forEach(tag => {
+      if (tag.toUpperCase().includes(keyword)){
+        return true
+      }
+    })
+
+    return false
+  }
 
   return (
     <div className="flex h-dvh flex-col overflow-hidden bg-[#7C7C7C]">
@@ -54,7 +66,7 @@ function App() {
       </header>
       <main className="min-h-0 flex-1 overflow-y-auto scrollbar-thin scrollbar-thumb-[#52DEE5] scrollbar-track-[#7C7C7C] hover:scrollbar-thumb-[#92DCE5]">
         <Filters category={category} search={search} setCategory={setCategory} setSearch={setSearch} />
-        <ItemsListing items={filteredItems} setCart={setCart} cart={cart} />
+        <ItemsListing items={filteredItems} />
       </main>
     </div>
   )
