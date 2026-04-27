@@ -464,11 +464,6 @@
   ],
   "cart": [
     {
-      "itemID": "5",
-      "count": 5,
-      "id": "8XHOxFuER2g"
-    },
-    {
       "itemID": "14",
       "count": 5,
       "id": "wkB4SD0WDrc"
@@ -477,6 +472,11 @@
       "itemID": "25",
       "count": 8,
       "id": "7BrA6-lqykc"
+    },
+    {
+      "itemID": "5",
+      "count": 27,
+      "id": "r-R3uYh6_-8"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

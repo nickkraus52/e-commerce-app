@@ -1,10 +1,10 @@
 function Filters({ category, search, setCategory, setSearch}){
-    const filterStyle = "text-[11px] text-[#EEE5E9] text-shadow-sm border-1 font-bold border-[#EEE5E9] bg-[#9a9a9a] p-1 mx-1 rounded-md"
-    const xStyle = "align-[-0.3px] text-shadow-md cursor-pointer text-[#81221f] hover:text-[#383D3B] hover:text-shadow-transparent"    
+    const filterStyle = "az-filter-item az-text-shadow-sm"
+    const xStyle = "az-filter-x"
 
     return (  
         <>
-            <div className="flex justify-center mx-3 pt-4 text-shadow-lg">
+            <div className="d-flex justify-content-center mx-3 pt-4 az-text-shadow-lg">
 
                 {(category !== "") ? (
                     <span className={filterStyle}>

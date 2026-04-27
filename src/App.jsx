@@ -4,6 +4,8 @@ import ItemsListing from './components/ItemsListing'
 import { useState, useEffect } from 'react'
 import Filters from './components/Filters'
 import SearchBar from './components/SearchBar'
+import './App.css'
+import './components/components.css'
 
 function App() {
   const URL = "http://localhost:5000/products"
@@ -59,12 +61,12 @@ function App() {
   }
 
   return (
-    <div className="flex h-dvh flex-col overflow-hidden bg-[#7C7C7C]">
-      <header className="z-10 w-full shrink-0 shadow-md shadow-black/20">
+    <div className="az-page d-flex flex-column">
+      <header className="az-header">
         <SearchBar setSearch={setSearch} search={search}/>
         <NavBar setCategory={setCategory} />
       </header>
-      <main className="min-h-0 flex-1 overflow-y-auto scrollbar-thin scrollbar-thumb-[#52DEE5] scrollbar-track-[#7C7C7C] hover:scrollbar-thumb-[#92DCE5]">
+      <main className="az-main">
         <Filters category={category} search={search} setCategory={setCategory} setSearch={setSearch} />
         <ItemsListing items={filteredItems} />
       </main>

@@ -1,8 +1,28 @@
-@import "tailwindcss";
+html, body, #root {
+  height: 100%;
+}
 
-@plugin "tailwind-scrollbar";
+body {
+  margin: 0;
+  background: #7c7c7c;
+}
 
-/* Tailwind v4 default hover uses @media (hover: hover); Chrome/Windows touch
-   laptops often fail that query—plain :hover restores mouse hover + DevTools. */
-@custom-variant hover (&:hover);
+*::-webkit-scrollbar {
+  width: 10px;
+}
+*::-webkit-scrollbar-track {
+  background: #7c7c7c;
+}
+*::-webkit-scrollbar-thumb {
+  background: #52dee5;
+  border-radius: 999px;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: #92dce5;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #52dee5 #7c7c7c;
+}
 
