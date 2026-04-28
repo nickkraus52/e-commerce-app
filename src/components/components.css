@@ -1,43 +1,29 @@
-.az-text-shadow-sm {
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
-}
-
-.az-text-shadow-md {
-  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.3);
-}
-
-.az-text-shadow-lg {
-  text-shadow: 0 3px 0 rgba(0, 0, 0, 0.35);
-}
-
-.az-text-stroke-1 {
-  -webkit-text-stroke: 1px #383d3b;
-}
-
-.az-drop-glow {
-  filter: drop-shadow(0 0.5rem 0.5rem rgba(82, 222, 229, 0.3));
-}
-
 .az-search-bar {
-  background: #eee5e5;
+  background: #37475A;
 }
 
 .az-search-form {
-  border: 2px solid #92dce5;
-  background: #7c7c7c;
-  border-radius: 0.5rem;
-  color: #222524;
+  color: #FEBD69;
   font-size: 10px;
   max-width: 36rem;
 }
 
+.az-main {
+  background-color: #ffe3be;
+}
+
+.az-search-form:focus {
+  border-color: #FEBD69;
+  background-color: #232F3E;
+}
+
 .az-search-input {
-  background: transparent;
-  border: 0;
-  color: #222524;
-  padding: 0;
+  border: 2px solid #FEBD69;
+  background: #ffd8a4;
+  border-radius: 0.5rem;
   outline: none;
   box-shadow: none;
+  margin: 0px 2px;
 }
 
 .az-search-input::placeholder {
@@ -49,42 +35,40 @@
 }
 
 .az-title {
-  background: #eee5e9;
+  background: #37475A;
   font-weight: 700;
   font-size: 1.25rem;
-  color: #92dce5;
+  color: #ff9f18;
   padding-bottom: 0.5rem;
+  text-shadow: 0px 0px 3px #e4a25f;
 }
 
 .az-nav {
-  background: #eee5e9;
-  border-bottom: 2px solid #565b59;
+  background: #37475A;
 }
 
 .az-nav-btn {
   flex: 1 1 0;
   font-weight: 700;
   font-size: 0.75rem;
-  color: #52dee5;
-  border: 2px solid #92dce5;
-  background: #383d3b;
-  border-radius: 0.5rem;
+  border-radius: 0%;
+  color: #b8895a;
+  background: #131A22;
   padding: 0.25rem 0.5rem;
-  margin: 0 0.125rem;
 }
 
 .az-nav-btn:hover {
-  background: #7c7c7c;
-  border-color: #383d3b;
-  color: #383d3b;
+  background: #232F3E;
+  border-color: transparent;
+  color: #c68749;
   text-shadow: none;
 }
 
 .az-filter-item {
   font-size: 11px;
-  color: #eee5e9;
-  border: 1px solid #eee5e9;
-  background: #9a9a9a;
+  color: #37475A;
+  border: 1px solid #37475A;
+  background: #6c778580;
   font-weight: 700;
   padding: 0.25rem;
   margin: 0 0.25rem;
@@ -94,29 +78,25 @@
 .az-filter-x {
   vertical-align: -0.3px;
   cursor: pointer;
-  color: #81221f;
+  color: #E47911;
   padding: 0;
   border: 0;
   background: transparent;
 }
 
 .az-filter-x:hover {
-  color: #383d3b;
-}
-
-.az-items-grid {
-  padding-bottom: 3.75rem;
+  color: #131A22;
 }
 
 .az-card {
-  box-shadow: 0 0.125rem 0.5rem rgba(82, 222, 229, 0.3);
   font-size: 0.75rem;
-  color: #383d3b;
-  border: 2px solid #92dce5;
+  color: #131A22;
   border-radius: 0.5rem;
-  background: #eee5e9;
+  background: #fff7ee;
   padding: 0.25rem;
   margin: 1rem;
+  height: 99%;
+  width: 99%;
 }
 
 .az-card-title {
@@ -125,27 +105,19 @@
   overflow-wrap: anywhere;
 }
 
-.az-card-desc {
-  font-size: 10px;
-  color: #4b5350;
+.az-image {
+  object-fit: cover;
+  width: 100%;
+  aspect-ratio: 1/1;
 }
 
 .az-stock-qty {
-  color: #00789a;
+  color: #FEBD69;
   font-weight: 700;
 }
 
 .az-sold-out {
-  color: #e25050;
-}
-
-.az-counter-container {
-  font-weight: 700;
-  font-size: 0.75rem;
-  color: #eee5e9;
-  border: 1px solid #92dce5;
-  width: fit-content;
-  background: #383d3b;
+  color: #E47911;
 }
 
 .az-counter-wrap {
@@ -154,9 +126,8 @@
   justify-content: center;
   gap: 0.5rem;
   padding: 0.15rem 0.35rem;
-  border: 1px solid #92dce5;
-  border-radius: 0.375rem;
-  background: #383d3b;
+  border-radius: 0.2rem;
+  background: #465669;
 }
 
 .az-counter-value {
@@ -165,23 +136,23 @@
   text-align: center;
   font-weight: 700;
   font-size: 0.75rem;
-  color: #eee5e9;
+  color: #131A22;
 }
 
 .az-counter {
   cursor: pointer;
   font-weight: 700;
   font-size: 0.75rem;
-  color: #eee5e9;
-  border: 1px solid #92dce5;
-  background: #383d3b;
+  color: #131A22;
+  border: 1px solid #FEBD69;
+  background: #37475A;
 }
 
 .az-counter-btn {
   font-weight: 700;
   font-size: 0.75rem;
-  color: #eee5e9;
-  background: #383d3b;
+  color: #131A22;
+  background: #465669;
   border-radius: 0.2rem;
   border: transparent;
   width: 1.75rem;
@@ -190,7 +161,6 @@
   align-items: center;
   justify-content: center;
   line-height: 1;
-  transition: background-color 120ms ease, border-color 120ms ease, filter 120ms ease;
 }
 
 .az-counter-btn:hover {
@@ -200,8 +170,8 @@
 .az-counter-limit {
   font-weight: 700;
   font-size: 0.75rem;
-  color: #eee5e9;
-  background: #383d3b;
+  color: #37475A;
+  background: #131A22;
   border: transparent;
   width: 1.75rem;
   height: 1.5rem;
@@ -212,11 +182,17 @@
 }
 
 .az-counter-btn-limit:hover {
-  background: #e25050;
+  background: #E47911;
+  color: #131A22;
 }
 
 .az-sb-icon {
-  color:#00789a;
+  color:#131A22;
+  margin-bottom: 5px;
   border: transparent;
+}
+
+.az-sb-icon:hover {
+  color:#FEBD69;
 }
 

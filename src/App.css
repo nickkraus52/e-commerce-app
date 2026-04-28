@@ -1,7 +1,9 @@
 .az-page {
+  display: flex;
+  flex-direction: column;
   height: 100dvh;
   overflow: hidden;
-  background: #7c7c7c;
+  background: #232F3E;
 }
 
 .az-header {
@@ -9,6 +11,7 @@
   width: 100%;
   flex: 0 0 auto;
   box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.2);
+  overflow: hidden;
 }
 
 .az-main {

@@ -4,7 +4,7 @@ function NavBar({ setCategory }) {
 
     return (
         <>
-            <div className="az-nav az-drop-glow d-flex w-100 flex-wrap justify-content-center align-items-center gap-1 px-1 py-1">
+            <div className="az-nav az-drop-glow d-flex w-100 flex-wrap justify-content-center align-items-center">
                 <button onClick={() => setCategory("Electronics")} className={buttonClass}>Electronics</button>
                 <button onClick={() => setCategory("Clothing")} className={buttonClass}>Clothing</button>
                 <button onClick={() => setCategory("Home")} className={buttonClass}>Home</button>

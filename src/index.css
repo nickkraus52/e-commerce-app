@@ -2,27 +2,22 @@ html, body, #root {
   height: 100%;
 }
 
-body {
-  margin: 0;
-  background: #7c7c7c;
-}
-
 *::-webkit-scrollbar {
   width: 10px;
 }
 *::-webkit-scrollbar-track {
-  background: #7c7c7c;
+  background: #232F3E;
 }
 *::-webkit-scrollbar-thumb {
-  background: #52dee5;
+  background: #E47911;
   border-radius: 999px;
 }
 *::-webkit-scrollbar-thumb:hover {
-  background: #92dce5;
+  background: #FEBD69;
 }
 
 * {
   scrollbar-width: thin;
-  scrollbar-color: #52dee5 #7c7c7c;
+  scrollbar-color: #E47911 #232F3E;
 }
 

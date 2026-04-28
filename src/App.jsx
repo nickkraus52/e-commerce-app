@@ -31,10 +31,10 @@ function App() {
         if (search.split(" ").length > 1){
           let words = search.split(" ")
           console.log("search")
-          words.forEach(word => setFilteredItems(updated.filter(i => checkForKeyword(word, i))))
+          words.forEach(word => setFilteredItems(updated.filter(i => checkForKeyword(word.toUpperCase(), i))))
         } else{
           console.log("h")
-          updated = updated.filter(i => checkForKeyword(search, i))
+          updated = updated.filter(i => checkForKeyword(search.toUpperCase(), i))
         } 
     } 
 
@@ -61,8 +61,8 @@ function App() {
   }
 
   return (
-    <div className="az-page d-flex flex-column">
-      <header className="az-header">
+    <div className="az-page">
+      <header className="az-header sticky-top">
         <SearchBar setSearch={setSearch} search={search}/>
         <NavBar setCategory={setCategory} />
       </header>
