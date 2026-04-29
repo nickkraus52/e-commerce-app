@@ -45,6 +45,8 @@
 
 .az-nav {
   background: #37475A;
+  border-left: 2px #080f17;
+  border-right: #eaf0f8;
 }
 
 .az-nav-btn {
@@ -52,7 +54,7 @@
   font-weight: 700;
   font-size: 0.75rem;
   border-radius: 0%;
-  color: #b8895a;
+  color: #3bc8ff;
   background: #131A22;
   padding: 0.25rem 0.5rem;
 }
@@ -60,8 +62,7 @@
 .az-nav-btn:hover {
   background: #232F3E;
   border-color: transparent;
-  color: #c68749;
-  text-shadow: none;
+  color: #3bc8ff;
 }
 
 .az-filter-item {
