@@ -12,14 +12,14 @@
   background-color: #ffe3be;
 }
 
-.az-search-form:focus {
+.az-search-input:focus {
   border-color: #FEBD69;
-  background-color: #232F3E;
+  background: #fff0dd;
 }
 
 .az-search-input {
   border: 2px solid #FEBD69;
-  background: #ffd8a4;
+  background: #fff0dd;
   border-radius: 0.5rem;
   outline: none;
   box-shadow: none;
@@ -128,11 +128,12 @@
   padding: 0.15rem 0.35rem;
   border-radius: 0.2rem;
   background: #465669;
+  overflow: hidden;
 }
 
 .az-counter-value {
   margin: 0;
-  min-width: 1.75rem;
+  min-width: 1.5rem;
   text-align: center;
   font-weight: 700;
   font-size: 0.75rem;
@@ -155,7 +156,7 @@
   background: #465669;
   border-radius: 0.2rem;
   border: transparent;
-  width: 1.75rem;
+  width: 1.5rem;
   height: 1.5rem;
   display: inline-flex;
   align-items: center;
