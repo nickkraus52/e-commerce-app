@@ -1,4 +1,4 @@
-import { Routes, BrowserRouter, Route } from 'react-router-dom'
+import { Routes, Route, BrowserRouter } from 'react-router-dom'
 import NavBar from './components/NavBar'
 import ItemsListing from './components/ItemsListing'
 import { useState, useEffect } from 'react'
@@ -6,6 +6,7 @@ import Filters from './components/Filters'
 import SearchBar from './components/SearchBar'
 import './App.css'
 import './components/components.css'
+import ShoppingCart from './components/ShoppingCart.jsx'
 
 function App() {
   const URL = "http://localhost:5000/products"
@@ -62,14 +63,29 @@ function App() {
 
   return (
     <div className="az-page">
-      <header className="az-header sticky-top">
-        <SearchBar setSearch={setSearch} search={search}/>
-        <NavBar setCategory={setCategory} />
-      </header>
-      <main className="az-main">
-        <Filters category={category} search={search} setCategory={setCategory} setSearch={setSearch} />
-        <ItemsListing items={filteredItems} />
-      </main>
+      <BrowserRouter>
+        <header className="az-header sticky-top">
+          <SearchBar setSearch={setSearch} search={search}/>
+          <NavBar setCategory={setCategory} />
+        </header>
+        <main className="az-main">
+          <Routes>
+            <Route path="/dashboard" element={
+              <>
+                <Filters category={category} search={search} setCategory={setCategory} setSearch={setSearch} />
+                <ItemsListing items={filteredItems} />
+              </>
+            } /> 
+            <Route path="/" element={
+              <>
+                <Filters category={category} search={search} setCategory={setCategory} setSearch={setSearch} />
+                <ItemsListing items={filteredItems} />
+              </>
+            } /> 
+            <Route path="/cart" element={<ShoppingCart items={items} />}/>
+          </Routes>
+        </main>
+      </BrowserRouter>
     </div>
   )
 }
