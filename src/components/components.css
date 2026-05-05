@@ -207,3 +207,15 @@
   color: #3bc8ff;
   text-shadow: 1px 1px 3px rgb(47, 60, 75);
 }
+
+.az-clear-btn {
+  font-size: 0.75rem;
+  border-radius: 3px;
+  color: #3bc8ff;
+  background: #131A22;
+  border-color: transparent;
+}
+
+.az-cart-image {
+  width: 20%;
+}

@@ -28,20 +28,20 @@ export default function ItemCount({ item }){
         }))
     }, [])
 
-    const handleCount = async (op) => {
+    const handleCount = (op) => {
         if (op === "-"){
             if (added !== 0){ 
                 setAdded(added - 1)
 
                 if (added > 1){
-                    await fetch(URL + "/" + cartID, {
+                    fetch(URL + "/" + cartID, {
                         method: "PATCH",
                         headers: {'content-type': 'application/json'},
                         body: JSON.stringify({"count": added - 1})
                         }
                     ).then(res => res.json())
                 } else {
-                    await fetch(URL + "/" + cartID, {
+                    fetch(URL + "/" + cartID, {
                         method: "DELETE"}
                     )
                     setCartID('')
@@ -52,7 +52,7 @@ export default function ItemCount({ item }){
                 setAdded(added + 1)
 
                 if (added == 0){
-                    await fetch(URL, {
+                    fetch(URL, {
                         method: "POST",
                         headers: {'Content-Type': 'application/json'},
                         body: JSON.stringify({
@@ -64,7 +64,7 @@ export default function ItemCount({ item }){
                     .then(res => res.json())
                     .then(data => setCartID(data.id))
                 } else {
-                    await fetch(URL + "/" + cartID, {
+                    fetch(URL + "/" + cartID, {
                         method: "PATCH",
                         headers: {'content-type': 'application/json'},
                         body: JSON.stringify({"count": added + 1})

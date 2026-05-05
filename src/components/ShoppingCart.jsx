@@ -3,6 +3,7 @@ import ItemCount from './ItemCount.jsx'
 
 function ShoppingCart(){
     const [items, setItems] = useState([])
+    const [total, setTotal] = useState(0)
     const URL = "http://localhost:5000/cart"
 
     useEffect(() => {
@@ -12,11 +13,9 @@ function ShoppingCart(){
     }, [])
 
     const clearCart = async () => {
-        await fetch(URL, {
-            method: "PUT",
-            headers: {"Content-Type": "application/json",},
-            body: JSON.stringify([]),
-        })
+        await items.forEach((cartItem) => fetch(`${URL}/${cartItem.id}`, { method: "DELETE" }))
+
+        setItems([])
     }
 
     return (
@@ -27,12 +26,16 @@ function ShoppingCart(){
             <h2 className="d-flex justify-content-center pb-1 az-cart-title">
                 Shopping Cart
             </h2>
-            <button onClick={clearCart}> 
-                Clear Cart
-            </button>
+
+            {items.length !== 0 ? (
+            <div className="d-flex justify-content-center pb-2">
+                <button className="az-clear-btn"  onClick={clearCart}>Clear Cart </button>
+            </div>)  : ""}
+
             <div className="d-flex justify-content-center">                
                 <div id="accordionID" className='accordion accordion-flush' style={{ width: '800px' }}>
                     {items.map((item) => (
+                        
                         <div key={item.id} className="accordion-item">
                             <h2 className="accordion-header">
                                 <button className="accordion-button collapsed d-flex" data-bs-toggle="collapse" data-bs-target={"#collapse" + item.id}>
@@ -42,6 +45,7 @@ function ShoppingCart(){
                             <div id={"collapse" + item.id} className="accordion-collapse collapse" data-bs-parent="#accordionID"> 
                                 <div className="accordion-body"> 
                                     <div>   
+                                        <img className="az-cart-image" src={item.item.imageURL}></img>
                                         <div className="az-cart-description">
                                             {item.item.description}
                                         </div>
@@ -56,8 +60,8 @@ function ShoppingCart(){
                     ))}
                 </div>
             </div>
-            <div>
-                Check Out
+            <div className="d-flex justify-content-center p-2">
+                {items.length !== 0 ? (<button className="az-clear-btn"  onClick={clearCart}>Check Out</button>) : "Add Some Items to your Cart!"}
             </div>
         </>
     )
