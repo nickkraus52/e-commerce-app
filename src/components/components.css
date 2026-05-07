@@ -199,6 +199,11 @@
   text-decoration: none;
 }
 
+.az-subtotal {
+  color: #e09f3c;
+  font-size: 0.9rem;
+}
+
 .az-cart-description {
   font-size: 0.8rem;
 }
@@ -211,11 +216,34 @@
 .az-clear-btn {
   font-size: 0.75rem;
   border-radius: 3px;
-  color: #3bc8ff;
-  background: #131A22;
+  color: #e1f7ff;
+  background: #2b3c4e;
   border-color: transparent;
 }
 
 .az-cart-image {
   width: 20%;
+}
+
+.az-checkout-form {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.az-checkout-input {
+  border: 2px solid #FEBD69;
+  background: #fff0dd;
+  border-radius: 0.5rem;
+  outline: none;
+  box-shadow: none;
+  padding: 0.35rem 0.5rem;
+  font-size: 0.85rem;
+  color: #131A22;
+}
+
+.az-checkout-input:focus {
+  border-color: #E47911;
+  background: #ffffff;
 }

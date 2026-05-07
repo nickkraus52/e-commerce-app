@@ -16,6 +16,7 @@ function ShoppingCart(){
         await items.forEach((cartItem) => fetch(`${URL}/${cartItem.id}`, { method: "DELETE" }))
 
         setItems([])
+        setTotal(0)
     }
 
     return (
@@ -52,7 +53,7 @@ function ShoppingCart(){
                                         <div>
                                             ${item.item.price.toFixed(2)}
                                         </div>
-                                        <ItemCount item={item.item} />
+                                        <ItemCount item={item.item} setTotal={setTotal} />
                                     </div>
                                 </div>
                             </div>
@@ -60,8 +61,28 @@ function ShoppingCart(){
                     ))}
                 </div>
             </div>
+            {items.length !== 0 ? (
             <div className="d-flex justify-content-center p-2">
-                {items.length !== 0 ? (<button className="az-clear-btn"  onClick={clearCart}>Check Out</button>) : "Add Some Items to your Cart!"}
+                <span className="az-link">
+                    Cart Subtotal:
+                </span>
+                <span className='az-subtotal'>
+                    ${total.toFixed(2)} 
+                </span>
+            </div>) : ""}
+            <div className="d-flex justify-content-center p-2 pb-5">
+                {items.length !== 0 ? (
+                <form className="az-checkout-form" onSubmit={clearCart}>
+                    <input required className="az-checkout-input az-checkout-span-2" placeholder="Card number" />
+                    <input required className="az-checkout-input" placeholder="MM/YY" />
+                    <input required className="az-checkout-input" placeholder="CVC" />
+                    <input required className="az-checkout-input az-checkout-span-2" placeholder="Shipping address" />
+
+                    <button className="az-clear-btn" type="submit">
+                        Check Out
+                    </button>
+                </form>) 
+                : "Add Some Items to your Cart!"}
             </div>
         </>
     )
