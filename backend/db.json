@@ -489,6 +489,30 @@
       }
     }
   ],
-  "cart": [],
+  "cart": [
+    {
+      "itemID": "12",
+      "count": 1,
+      "item": {
+        "id": "12",
+        "name": "Nonstick Cookware Set (10-Piece)",
+        "description": "Durable nonstick pots and pans set with heat-resistant handles and even heat distribution.",
+        "category": "Kitchen",
+        "tags": [
+          "cookware",
+          "kitchen",
+          "nonstick",
+          "cooking"
+        ],
+        "price": 119.99,
+        "imageURL": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQIQX2h_EP_N4qClNX2pyy6fv39kJgfCC47J12qgoEaNgV62F6i5aDmbA7ez7FEgnq9CRDzZSUkhqyTb2D_jDIPmNZkWK-2uOYgD214SIFdvhrkvYPMZE0wo8fYldaJpD18VjcglzVu2g&usqp=CAc",
+        "stock": {
+          "available": true,
+          "quantity": 22
+        }
+      },
+      "id": "3XbnxLIkODs"
+    }
+  ],
   "$schema": "./node_modules/json-server/schema.json"
 }

@@ -31,10 +31,8 @@ function App() {
     } if (search !== "" && search !== undefined){
         if (search.split(" ").length > 1){
           let words = search.split(" ")
-          console.log("search")
-          words.forEach(word => setFilteredItems(updated.filter(i => checkForKeyword(word.toUpperCase(), i))))
+          words.forEach(word => {updated = updated.filter(i => checkForKeyword(word.toUpperCase(), i))})
         } else{
-          console.log("h")
           updated = updated.filter(i => checkForKeyword(search.toUpperCase(), i))
         } 
     } 

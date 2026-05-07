@@ -13,7 +13,8 @@ function ShoppingCart(){
     }, [])
 
     const clearCart = async () => {
-        await items.forEach((cartItem) => fetch(`${URL}/${cartItem.id}`, { method: "DELETE" }))
+        await items.forEach((item) => 
+            fetch(`${URL}/${item.id}`, { method: "DELETE" }))
 
         setItems([])
         setTotal(0)
